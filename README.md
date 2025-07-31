@@ -1,4 +1,4 @@
-# automating-public-data-linkage
+# Automating the Linkage of Open-Access Data
 
 This repository provides an automated codebase for downloading, extracting, and linking open-access datasets. The code was primarily built around the NHS Digital General Practice Workforce dataset and additionally has been tested on the Admitted Patient Care dataset. The code can be adapted and generalised for future use.
 
