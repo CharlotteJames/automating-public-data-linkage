@@ -1,3 +1,5 @@
+
+
 # cleaning before appending ---
 
 # needs to be refined
@@ -29,7 +31,7 @@ clean_apc_data <- function(file_path, snapshot_date) {
 
   if (is.na(header_row)) {
     message(
-      "  header row not found in: ", 
+      " error: header row not found in: ", 
       basename(file_path)
       )
     return(NULL)
@@ -58,7 +60,7 @@ clean_apc_data <- function(file_path, snapshot_date) {
 # merge ---
 
 apc_merged_data <- data.frame()
-file_shapes <- list()
+file_shape <- list()
 
 # merges in file_log order
 for (i in seq_len(nrow(file_log))) {
@@ -76,7 +78,7 @@ for (i in seq_len(nrow(file_log))) {
 
   if (!is.null(apc_data)) {
     apc_merged_data <- bind_rows(apc_merged_data, apc_data)
-    file_shapes[[snapshot_date]] <- c(
+    file_shape[[snapshot_date]] <- c(
       nrow(apc_data), 
       ncol(apc_data)
       )
@@ -89,8 +91,8 @@ for (i in seq_len(nrow(file_log))) {
 
 # dimensions
 summary <- data.frame(
-  date = names(file_shapes),
-  rows = sapply(file_shapes, `[`, 1),
-  cols = sapply(file_shapes, `[`, 2),
+  date = names(file_shape),
+  rows = sapply(file_shape, `[`, 1),
+  cols = sapply(file_shape, `[`, 2),
   stringsAsFactors = FALSE
 )
