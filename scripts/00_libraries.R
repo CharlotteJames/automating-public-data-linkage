@@ -1,0 +1,8 @@
+library(rvest)
+library(httr)
+library(stringr)
+library(lubridate)
+library(readr)
+library(fs)
+library(dplyr)
+library(readxl)
