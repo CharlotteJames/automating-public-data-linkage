@@ -2,7 +2,7 @@
 
 This repository provides an automated codebase for downloading, extracting, and linking open-access datasets. The code was primarily built around the NHS Digital General Practice Workforce dataset and additionally has been tested on the Admitted Patient Care dataset. The code can be adapted and generalised for future use. 
  
-### Dataset 
+## Dataset 
  
 The General Practice Workforce dataset, published by NHS Digital provides a monthly snapshot of the general practice workforce in England. Each dataset represents the workforce composition as of the last calendar day of the reporting month, including weekends and public holidays. Prior to July 2021, data was collected and published quarterly, with snapshots recorded on 31 March, 30 June, 30 September, and 31 December, and then transitioned to monthly data collection and publication from July 2021 onward. 
  
