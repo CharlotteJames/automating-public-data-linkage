@@ -20,5 +20,6 @@ After merging the workforce datasets across all available publication snapshots,
 The Hospital Admitted Patient Care Activity dataset, published by NHS Digital, provides yearly snapshots of hospital inpatient episodes in England. Each dataset is grouped according to the responsible commissioning organisation:
 - Before July 2022: Grouped by Clinical Commissioning Groups (CCGs)
 - From July 2022 onward: Grouped by Integrated Care Boards (ICBs)
+
 The source for this publication is Hospital Episode Statistics (HES), which records information on all inpatient admissions, including diagnostic codes, procedures, and administrative details.
 This dataset enables analysis of hospital activity trends and variation at a regional or organisational level over time, and can be linked to other datasets using consistent geographic identifiers.
